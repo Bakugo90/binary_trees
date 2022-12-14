@@ -1,5 +1,10 @@
 #include "binary_trees.h"
 
+/**
+ * binary_tree_nodes - nodes count
+ * @tree: node
+ * Return: unsigned int
+*/
 size_t binary_tree_nodes(const binary_tree_t *tree)
 {
     size_t n = 0;
@@ -13,6 +18,11 @@ size_t binary_tree_nodes(const binary_tree_t *tree)
     return (n);
 }
 
+/**
+ * binary_tree_height - height
+ * @tree: node
+ * Return: unsigned int
+*/
 size_t binary_tree_height(const binary_tree_t *tree)
 {
     size_t n;
@@ -25,7 +35,11 @@ size_t binary_tree_height(const binary_tree_t *tree)
     return (n);
 }
 
-
+/**
+ * binary_tree_full - node full
+ * @tree: node
+ * Return: int
+*/
 int binary_tree_is_full(const binary_tree_t *tree)
 {
     int n;

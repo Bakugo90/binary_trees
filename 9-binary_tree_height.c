@@ -1,5 +1,10 @@
 #include "binary_trees.h"
 
+/**
+ * binary_tree_height - height
+ * @tree: node
+ * Return: unsigned int
+*/
 size_t binary_tree_height(const binary_tree_t *tree)
 {
     size_t n;
