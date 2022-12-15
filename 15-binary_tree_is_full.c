@@ -2,6 +2,7 @@
 
 /**
  * binary_tree_full - node full
+ * Description - ...
  * @tree: node
  * Return: int
 */
@@ -17,4 +18,3 @@ return (0);
 
 return (1);
 }
-

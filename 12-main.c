@@ -27,4 +27,3 @@ leaves = binary_tree_leaves(root->left->right);
 printf("Leaves in %d: %lu\n", root->left->right->n, leaves);
 return (0);
 }
-
