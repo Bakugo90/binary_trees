@@ -50,32 +50,24 @@ int count(line_t **head)
 }
 
 
-
-
-
-
-
-
-
-
-
-
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
     line_t **head = NULL, **head2;
     if (tree == NULL || func == NULL)
         return;
-    func(tree);
+    func(tree->n);
     if (tree->left != NULL)
         head = node_add(head, tree->left);
     if (tree->right != NULL)
         head = node_add(head, tree->right);
     
-    while (count(head) > 1 && (*head)->next->left != NULL && (*head)->next->right != NULL)
+    while (count(head) > 1 && (*head)->next != NULL &&
+		    (*head)->next->node->left != NULL &&
+		    (*head)->next->node->right != NULL)
     {
         while ((*head) != NULL)
         {
-            func((*head));
+            func((*head)->node->n);
             (*head) = (*head)->next;
         }
 

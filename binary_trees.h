@@ -35,7 +35,7 @@ typedef struct binary_tree_s heap_t;
 typedef struct line
 {
     binary_tree_t *node;
-    binary_tree_t *next;
+    struct line *next;
 } line_t;
 
 void binary_tree_print(const binary_tree_t *tree);
