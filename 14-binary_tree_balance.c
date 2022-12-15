@@ -30,4 +30,6 @@ int binary_tree_balance(const binary_tree_t *tree)
 
     n = ((signed int)(binary_tree_height(tree->left))
         - (signed int)(binary_tree_height(tree->right)));
+    return (n);
 }
+
