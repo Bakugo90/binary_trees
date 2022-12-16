@@ -16,4 +16,3 @@ n = (tree->left) ? 1 + binary_tree_height(tree->left) : 0;
 r = (tree->right) ? 1 + binary_tree_height(tree->right) : 0;
 return ((r > n) ? r : n);
 }
-

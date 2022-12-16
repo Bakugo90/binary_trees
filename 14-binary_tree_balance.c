@@ -1,5 +1,6 @@
 #include "binary_trees.h"
 
+
 /**
  * binary_tree_height - height
  * @tree: node
@@ -18,14 +19,12 @@ return ((r > n) ? r : n);
 
 /**
  * binary_tree_balance - balance
- * @tree: node
- * Return: int
+ * @tree: node root
+ * Return: integer (0 or 1)
 */
 int binary_tree_balance(const binary_tree_t *tree)
 {
 if (tree == NULL)
 return (0);
-
 return (binary_tree_height(tree->left) - binary_tree_height(tree->right));
 }
-
