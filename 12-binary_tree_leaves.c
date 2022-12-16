@@ -13,7 +13,7 @@ return (0);
 if (tree->left == NULL && tree->right == NULL)
 n++;
 
-n += binary_tree_leaves(tree->left) 
+n += binary_tree_leaves(tree->left)
 + binary_tree_leaves(tree->right);
 return (n);
 }
