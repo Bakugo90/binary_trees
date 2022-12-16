@@ -12,8 +12,8 @@ size_t n = 0, r = 0;
 if (tree == NULL)
 return (0);
 
-n = (tree->left) ? 1 + binary_tree_height(tree->left) : 0;
-r = (tree->right) ? 1 + binary_tree_height(tree->right) : 0;
+n = (tree->left) ? 1 + binary_tree_height(tree->left) : 1;
+r = (tree->right) ? 1 + binary_tree_height(tree->right) : 1;
 return ((r > n) ? r : n);
 }
 
